@@ -41,10 +41,6 @@ public:
     SavingAccount(long int accountNumber, short int pin, long double balance)
         : Account(accountNumber, pin, balance) {}
 
-    void checkbalance()
-    {
-        cout << "Current Balance: " << this->balance << endl;
-    }
     void withdraw(long double amount)
     {
         if (amount > withdrawLimit)
@@ -86,10 +82,6 @@ public:
     CurrentAccount(long int accountNumber, short int pin, long double balance)
         : Account(accountNumber, pin, balance) {}
 
-    void checkbalance()
-    {
-        cout << "Current Balance: " << this->balance << endl;
-    }
     void withdraw(long double amount)
     {
         if (amount > withdrawLimit)
